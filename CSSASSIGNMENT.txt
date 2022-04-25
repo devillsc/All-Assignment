@@ -1,0 +1,321 @@
+1)QUESTION 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        h1{
+            background-color: royalblue;
+            margin: 0 auto;
+            top:0%;
+        }
+        .para{
+            background-color: gray;
+            margin:0 auto;
+            top:0%;
+           
+        }
+        .b{
+            background-color: deepskyblue;
+            margin:0 auto;
+            top:0%;
+        }
+        div{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS background-color example!</h1>
+        <p class="para">This is a text inside the div element</p>
+        <p class="b">This paragraph has its own background color</p>
+        <p class="para">We are still in div element.</p>
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------
+2) QUESTION 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-decoration-line:underline ;
+        }
+        h2{
+            text-decoration: line-through;
+        }
+        div{
+            border: 4px groove;
+            background-color: rgb(164, 221, 243);
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+    </div>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------
+3)QUESTION3
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+    <style>
+        .cap{
+            text-transform:uppercase ;
+            font-size: 20px;
+        }
+       
+        .all{
+            border: 1px groove black;
+            background-color: rgb(186, 248, 248);
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="cap">This is some text</div><br>
+        <div>This is some text</div><br>
+        <div>This is some text</div>  
+    </div>  
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------
+
+4)QUESTION4
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q4</title>
+    <style>
+      div{
+          border: 1px solid black;
+          background-color: rgb(168, 255, 255);
+      }
+      a:link{
+          color: blue;
+      }
+      a:visited{
+          color: red;
+      }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://www.youtube.com">This is a link</a>
+    </div>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+5)QUESTION 5
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <style>
+        table,th,td{
+            border: 1px,solid,black;
+            border-collapse: collapse;
+            margin-left: 10px;
+        }
+        div{
+            border: 1px solid black;
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+6) QUESTION 6
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+    <style>
+        table,th,td{
+            border: 2px solid green;
+            margin-left: 15px;
+        }
+        th{
+            background-color: green;
+            color: #ffff;
+        }
+        div{
+            border:1px solid black;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+QUESTION7
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        border: 1px solid black;
+        float: left;
+      }
+      p{
+         box-sizing: border-box;
+         width:90%;
+         border: 1px solid red;
+         padding: 10px 10x;
+         margin: auto;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         outline-style: dotted;
+         outline-color: green;
+         
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <strong>Note:</strong> IE8 supports the online properties only if a !DOCTYPE is specified
+        </p>
+    </div>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+QUESTION8
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border:5px solid black;
+            background-color: lightblue;
+        }
+        .b{
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+        .c{
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+   
+        <p class="a">Some text</p>
+        <p class="b">Some text</p>
+        <p class="c">Some text</p>
+    
+</body>
+</html>

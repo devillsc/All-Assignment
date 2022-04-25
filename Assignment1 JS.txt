@@ -1,0 +1,519 @@
+1.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const n = parseInt(prompt("Enter a Number"));
+            let sum = n*(n+1)/2;
+            document.write(sum);
+        </script>
+    </body>
+</html>
+
+2.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const n = parseInt(prompt("Enter a Number"));
+            var sum=0;
+            for(let i=1; i<=n; i++)
+            {
+                if((i%3==0) || (i%5==0))
+                {
+                    var sum = sum+i;
+                }
+            }
+            document.write(sum);
+        </script>
+    </body>
+</html>
+
+3.<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function returnOddEven(n)
+            {
+                if(n%2==0)
+                {
+                    return "even"
+                }
+                else
+                {
+                    return "odd"
+                }
+            }
+            var n = parseInt(prompt("Enter a number: "));
+            document.write(returnOddEven(n))
+        </script>
+    </body>
+</html>
+
+4.<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function coinFlip(n) 
+            {
+                var heads = 0;
+                const array = Array(n) 
+				.fill()
+				.map(() => 10 * Math.random()); 
+                for(let i=0; i<array.length; i++)
+                {
+                    if(array[i]<0.95)
+                    {
+                        array[i] = 0;
+                    }
+                    else if(array[i]>0.94)
+                    {
+                        array[i] = 1;
+                    }
+                    if(array[i] == 1)
+                    {
+                       heads = heads+1;
+                    }
+                }
+                return heads/n;
+            }
+            var n = parseInt(prompt("Enter a number: "))
+            document.write(coinFlip(n))
+        </script>
+    </body>
+</html>
+
+5.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var year = prompt("please input a year to find out the next 20 years");
+            var counter = 20;
+            var result=true;
+            document.write(leapyear(year,counter,result));
+            function leapyear(year, counter, result) 
+            {
+                while (counter >= 0) 
+                {
+                    if ((year % 4 === 0) && (year % 100 !== 0)||(year % 400 === 0))
+                    {
+                        result = true;
+                        document.write(year+"\n");
+                        year++;
+                        counter--;
+                    } 
+                    else
+                    {
+                        year++;
+                    }    
+                }
+            }
+        </script>
+    </body>
+</html>
+
+6.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var listStrings = ["Hello","World","in","a","Frame"];
+            document.write("********"+"<br>")
+            for(let i=0; i<listStrings.length; i++)
+            {
+                document.write("* "+listStrings[i]+" *"+"<br>")
+            }
+            document.write("********")
+        </script>
+    </body>
+</html>
+
+7.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var dollar = parseInt(prompt("Enter an amount in dollar: "));
+            var inr = dollar*75.08;
+            var yen = dollar*115.09;
+            var euro = dollar*0.89;
+            var pound = dollar*0.75;
+            document.write(inr+" INR<br>"+yen+" Yen<br>"+euro+" Euro<br>"+pound+" Pounds");
+        </script>
+    </body>
+</html>
+
+8.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const arr1 = [1,2,3];
+            const arr2 = ['a','b','c'];
+            document.write(arr1.concat(arr2));
+        </script>
+    </body>
+</html>
+
+9.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let arr1 = [1,2,3];
+            let arr2 = ['a','b','c'];
+
+            var alternateList = function(arr1,arr2)
+            {
+                let lengthList = arr1.length + arr2.length;
+                let emptyArray = [];
+                let j=0,k=0;
+                for(let i=0; i<lengthList; i++) {
+                    if(i%2==0) {
+                    emptyArray[i]=arr1[j++];
+                    } else {
+                    emptyArray[i]=arr2[k++];
+                    }
+                }
+                return emptyArray;
+            }
+            document.write(alternateList(arr1,arr2));
+        </script>
+    </body>
+</html>
+
+10.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const number = parseInt(prompt('Enter the number of elements: '));
+            let n1 = 0, n2 = 1, next;
+            for (let i = 1; i <= number; i++) {
+                document.write(n1 + "<br>")
+                next = n1 + n2;
+                n1 = n2;
+                n2 = next;
+            }
+        </script>
+    </body>
+</html>
+
+11.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const array = Array(5) 
+				.fill()
+				.map(() => 10 * Math.random()); 
+            document.write("Original : "+ array + "<br>");
+            document.write("Reverse : "+ array.reverse());
+        </script>
+    </body>
+</html>
+12.
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function maxRepeating(str)
+            {
+                let len = str.length;
+                let count = 0;
+                let res = str[0];
+                for (let i=0; i<len; i++)
+                {
+                    let cur_count = 1;
+                    for (let j=i+1; j<len; j++)
+                    {
+                        if (str[i] != str[j])
+                        break;
+                        cur_count++;
+                    } 
+                    if (cur_count > count)
+                    {
+                        count = cur_count;
+                        res = str[i];
+                    }
+                }
+                return res;
+            }
+            let str = "ujhffftrttttppoooo";
+            document.write(maxRepeating(str));
+        </script>
+    </body>
+</html>
+
+13.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var arr = [1,2,3,4,5];
+            var n = parseInt(prompt("Option 1: for loop \nOption 2: while loop \nOption 3: do while loop\n\nEnter an option"));
+            switch(n)
+            {
+                case 1: 
+                    //using for loop
+                    var sum1 = 0;
+                    for(let i=0;i<arr.length;i++)
+                    {
+                        sum1 = sum1 + arr[i];
+                    }
+                    document.write("Using for loop: "+sum1);
+                break;
+
+                case 2:
+                    //using while loop
+                    var sum2 = 0;
+                    let i = 0;
+                    while(i<arr.length)
+                    {
+                        sum2 = sum2 + arr[i];
+                        i++;
+                    }        
+                    document.write("Using while loop: "+sum2);  
+                break;
+
+                case 3:
+                     //using do while loop
+                    var sum3 = 0;
+                    let j = 0;
+                    do{
+                        sum3 = sum3 + arr[j];
+                        j++;
+                    }
+                    while(j<arr.length);
+                    document.write("Using do while loop: "+sum3);
+                break;
+            }
+        </script>
+    </body>
+</html>
+
+14.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var arr = [];
+            while(arr.length < 100)
+            {
+                var r = Math.floor(Math.random() * 200) + 1;
+                if(arr.indexOf(r) === -1) arr.push(r);
+            }
+            //the array is printed as follows
+            document.write(arr);
+
+            //maximum of the array
+            var maximum = Math.max.apply(null,arr);
+            document.write("<br>Maximum number in the array is: ",maximum);
+
+            //minimum of the array
+            var minimum = Math.min.apply(null,arr);
+            document.write("<br>Minimum number in the array is: ", minimum);
+
+            //odd and even count comparision
+            var even_count = 0;
+            var odd_count = 0;
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i]%2 == 0)
+                {
+                    even_count++;
+                }
+                else if(arr[i]%2!=0)
+                {
+                    odd_count++;
+                }
+            }
+            if(odd_count>even_count)
+            {
+                document.write("<br>Odd count is more<br>Odd count: "+odd_count+"<br>Even Count: "+even_count)
+            }
+            else if(odd_count==even_count)
+            {
+                document.write("<br>Both are equal<br>Odd count: "+odd_count+"<br>Even Count: "+even_count)
+            }
+            else
+            {
+                document.write("<br>Even count is more<br><br>Odd count: "+odd_count+"<br>Even Count: "+even_count)
+            }
+
+            //sum and average
+            var sum = 0;
+            for(let i=0;i<arr.length;i++)
+            {
+                sum = sum + arr[i];
+            }
+            document.write("<br>Sum is: "+sum+ " and the average is: "+sum/arr.length);
+        </script>
+    </body>
+</html>
+
+15.<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var arr = [];
+            while(arr.length < 20)
+            {
+                var r = Math.floor(Math.random() * 30) + 1;
+                if(arr.indexOf(r) === -1) arr.push(r);
+            }
+            //the array is printed as follows
+            document.write(arr+"<br>");
+
+            //bubble sort
+            for(var i = 0; i < arr.length; i++)
+            {
+                for(var j = 0; j < (arr.length - i -1); j++)
+                {
+                    if(arr[j] > arr[j+1])
+                    {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j+1] = temp;
+                    }
+                }
+            }
+            document.write(arr);
+        </script>
+    </body>
+</html>
+
+16.
+<!DOCTYPE html> 
+<html> 
+    <head>  
+        <style type="text/css"> 
+            body {margin: 30px;} 
+        </style>  
+    </head>
+    <body> 
+        <script>
+            function createTable()
+            {
+                rn = window.prompt("Input number of rows", 1);
+                cn = window.prompt("Input number of columns",1);
+                    
+                for(var r=0;r<parseInt(rn,10);r++)
+                {
+                    var x=document.getElementById('myTable').insertRow(r);
+                    for(var c=0;c<parseInt(cn,10);c++)  
+                    {
+                        var y=  x.insertCell(c);
+                        y.innerHTML="Row-"+r+" Column-"+c; 
+                    }
+                }
+            }
+        </script>
+        <table id="myTable" border="1"></table>
+        <form> 
+            <input type="button" onclick="createTable()" value="Create the table"> 
+        </form>
+    </body>
+</html>
+
+17.
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function leftRotate(arr , d , n) 
+            {
+                for (i = 0; i < d; i++)
+                    leftRotatebyOne(arr, n);
+            }
+            function leftRotatebyOne(arr , n) {
+                var i, temp;
+                temp = arr[0];
+                for (i = 0; i < n - 1; i++)
+                    arr[i] = arr[i + 1];
+                arr[n - 1] = temp;
+            }
+            function printArray(arr , n) {
+                for (i = 0; i < n; i++)
+                    document.write(arr[i] + " ");
+            }
+            var arr = [1,2,3,4,5];
+            leftRotate(arr,2,5);
+            printArray(arr,5);
+        </script>
+    </body>
+</html>
+
+18.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const pigLatinSentence = (s) => {
+                let ans = "";
+                for (let i = 0; i < s.length; i++) {
+                    let j = i;
+                    if (i >= s.length)
+                        break;
+                    while (i < s.length && s.charAt(i) != ' ')
+                        i++;
+                    if (ans.length === 0) {
+                        ans = ans + s.substring(j + 1, i) + s.charAt(j) + "ay";
+                    }
+                    else {
+                        ans = ans + " " + s.substring(j + 1, i) + s.charAt(j) + "ay";
+                    }
+                }
+                return ans;
+            }
+            let s = "the quick brown fox";
+            document.write(pigLatinSentence(s));
+        </script>
+    </body>
+</html>
+
+19.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name = "form1">
+	
+            <input id = "calc" type ="text" name = "answer"> <br> <br>
+            
+            <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+            <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+            <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+            <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+            <br> <br>
+            
+            <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+            <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+            <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+            <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+            <br> <br>
+            
+            <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+            <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+            <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+            <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">
+            <br> <br>
+            
+            
+            <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">
+            <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+            <input type = "button" value = "." onclick = "form1.answer.value += '.' ">
+            <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+            <br> 
+  
+        </form>
+    </body>
+</html>

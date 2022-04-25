@@ -1,0 +1,170 @@
+1.<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Rectangle
+            {
+                constructor(height, width)
+                {
+                    this.height = height;
+                    this.width = width;
+                }
+            }
+            const r = new Rectangle(parseInt(prompt("Enter Height: ")),parseInt(prompt("Enter Width: ")));
+            //instance
+            document.write("Instance created: "+r instanceof Rectangle);
+            document.write("<br>Height: "+r.height);
+            document.write("<br>Width: "+r.width);
+            //change properties(optional)
+            r.height = 12;
+            //instance
+            document.write("Instance created: "+r instanceof Rectangle);
+            document.write("<br>Height: "+r.height);
+            document.write("<br>Width: "+r.width);
+
+        </script>
+    </body>
+</html>
+
+
+2.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Rectangle
+            {
+                constructor(height, width)
+                {
+                    this.height = height;
+                    this.width = width;
+                }
+                //get area
+                get area()
+                {
+                    return this.height * this.width;
+                }
+            }
+            const r = new Rectangle(parseInt(prompt("Enter Height: ")),parseInt(prompt("Enter Width: ")));
+            //instance
+            document.write("Instance created: "+r instanceof Rectangle);
+            document.write("<br>Height: "+r.height);
+            document.write("<br>Width: "+r.width);
+            //area
+            document.write("<br><br>Area is: "+r.area);
+        </script>
+    </body>
+</html>
+
+3.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class Rectangle
+            {
+                constructor(height, width)
+                {
+                    this.height = height;
+                    this.width = width;
+                }
+                //get area
+                get area()
+                {
+                    return this.height * this.width;
+                }
+            }
+            const r = new Rectangle(5,4);
+            //instance is created
+            document.write(r instanceof(Rectangle))
+            //area
+            document.write("<br><br>Area is: "+r.area);
+            //change properties
+            r.height = 50;
+            //instance is created again (new properties loaded)
+            document.write(r instanceof(Rectangle));
+            //area
+            document.write("<br><br>Area is: "+r.area);
+        </script>
+    </body>
+</html>
+
+4.
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const variable = new Object();
+            variable.firstName = "Subham";
+            variable.lastName = " Satpathy";
+            //print the properties
+            document.write(variable.firstName);
+            document.write(variable.lastName);
+            //change properties
+            variable.lastName = " Subhamaya Satpathy"
+            //print properties again
+            document.write("<br>"+variable.firstName);
+            document.write(variable.lastName);
+        </script>
+    </body>
+</html>
+
+5.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const variable = new Object();
+            variable.firstName = "Subham";
+            variable.lastName = " Satpathy";
+            //print the properties
+            document.write(variable.firstName);
+            document.write(variable.lastName);
+            //change properties
+            variable.lastName = " Subhamaya Satpathy"
+            //print properties again
+            document.write("<br>"+variable.firstName);
+            document.write(variable.lastName);
+
+            //reading middle name
+            document.write("<br><br>Before Assigning middle name: "+variable.middleName);
+            //assigning middle name
+            variable.middleName = " Subhamaya";
+            //reading again after assigning
+            document.write("<br>After Assigning middle name: "+variable.middleName);
+        </script>
+    </body>
+</html>
+
+
+6.
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var string = "{firstName:'Subham', lastName:'Satpathy'}";
+            eval('var obj='+string);
+            document.write(obj.firstName);
+            document.write("<br>"+obj.lastName);
+        </script>
+    </body>
+</html>
+
+7. 
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var myobj = JSON.parse('{"firstName":"Subham", "lastName":"Satpathy"}');
+            document.write(myobj.firstName);
+            document.write("<br>"+myobj.lastName);
+        </script>
+    </body>
+</html>
